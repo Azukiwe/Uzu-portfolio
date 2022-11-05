@@ -11,16 +11,17 @@
   />
   <link
     href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
-    rel="stylesheet">
+    rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/3b989edefd.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header style="background-color:plum;">
+    <header style="background-color:plum;height: 3rem;">
         <section id="#index">
           <!--Nav-->
           <div class="NAV">
-          <nav class="nav" style="margin-left: 50px; display: flex">
+          <nav class="nav" style="margin-left: 50px; display: flex;">
             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="education.html">Work & Education </a>
@@ -55,22 +56,31 @@
             ></a>
           </div>
         </section>
+            <div class="logo" style="transform: translateY(-60px); width:15px; ">
+              <img
+                src="/Assets/u.png"
+                alt=""
+                srcset=""
+                style="width: 40px; margin-bottom: 30px"
+              />
+            </div>
+           
     </header>
          <main>
     <div class="title">
         <h2>Contact</h2>
     </div>
     <section id="contact" style="display: flex;">
-        <div class="contact-form" style="width: 600px; padding:20px 24px; height: 500px; flex-direction:column; border:2px solid grey;border-radius: 14px;box-sizing: border-box;background-color: pink; box-shadow: 20px 20px 50px 10px grey; margin-top: 50px; margin-left: 90px; margin-bottom: 50px;">
+        <div class="contact-form" style="width: 600px; padding:20px 24px; height: 600px; flex-direction:column; border:2px solid grey;border-radius: 14px;box-sizing: border-box;background-color: pink; box-shadow: 20px 20px 50px 10px grey; margin-top: 50px; margin-left: 90px; margin-bottom: 50px;">
           <center>
       <form action="https://formspree.io/f/xvoyqypq" method="post">
         <h2>Feedback Form</h2>
         <label for="name" style="display: block ; width:40%; padding:4px 14px; margin: 8px;box-sizing:border-box;">Name</label>
-        <input type="text" placeholder="Enter your Name" class="box" style="border:2px solid purple ; border-radius:20px;">
+        <input type="text" name="name" placeholder="Enter your Name" class="box" style="border:2px solid purple ; border-radius:20px;">
         <label for="surname"style="display: block ; width:40%; padding:4px 14px; margin: 8px;box-sizing:border-box;">Surname</label>
-        <input type="text" placeholder="Enter your surname" class="box"style="border:2px solid purple ; border-radius:20px;">
+        <input type="text" name="surname" placeholder="Enter your surname" class="box"style="border:2px solid purple ; border-radius:20px;">
         <label for="message"style="display: block ; width:40%; padding:4px 14px; margin: 8px;box-sizing:border-box;">Message</label>
-        <input type="text" placeholder="Enter your message" class="box"style="border: 2px solid purple; border-radius:20px; height: 140px; width:210px">
+        <input type="text" name="message" placeholder="Enter your message" class="box"style="border: 2px solid purple; border-radius:20px; height: 140px; width:210px">
         <label for="rate"style="display: block ; width:40%; padding:4px 14px; margin: 8px;box-sizing:border-box;">Please rate the portofolio</label>
         <select name="rate" id="rate"style="border:2px solid purple ; border-radius:20px; width:100px">
             <option value=""></option>
@@ -79,30 +89,32 @@
             <option value="">3</option>
             <option value="">4</option>
             <option value="">5</option>
-        </select>
+        </select> <br>
+        <button type="submit" class="btn btn-outline-secondary mt-4">Submit</button>
       </form>
           </center>
         </div>
         <div class="contact-me" style="margin-top:50px; padding:50px;margin-left: 200px;">
             <h2>For more information contact </h2>
             <a href=""><i class="fas fa-regular fa-mobile" style="color:black;"> 073 601 8746</i></a><br>
-            <a href=""><i class=" fa-regular fa-envelopes">dywiliuzukhanye@gmail.com</i> </a><br>
-            <a href="https://www.facebook.com/uzukhanyedywili"
+            <a href=""><i class="fa-solid fa-envelope" style="color: black;"> dywiliuzukhanye@gmail.com</i> </a><br>
+            <a href=""><i class="fa-solid fa-phone " style="color: black ;"> 073 601 8746</i></a> <br>
+            <a href="https://www.facebook.com/uzukhanyedywili" target="_blank"
           ><i class="fas fa-brands fa-facebook"></i
         ></a>
-        <a href="https://www.instagram.com/uzukhanyedywili"
+        <a href="https://www.instagram.com/uzukhanyedywili" target="_blank"
           ><i
             class="fa-brands fa-instagram"
             style="color: rgb(221, 41, 123)"
           ></i
         ></a>
-        <a href="https://www.linkedin.com/in/uzukhanye-dywili-a6976b255"
+        <a href="https://www.linkedin.com/in/uzukhanye-dywili-a6976b255" target="_blank"
           ><i class="fa-brands fa-linkedin" style="color: blue"></i
         ></a>
-        <a href="https://www.youtube.com"
+        <a href="https://www.youtube.com" target="_blank"
           ><i class="fa-brands fa-youtube" style="color: red"></i
         ></a>
-        <a href="https://www.github.com/Azukiwe"
+        <a href="https://www.github.com/Azukiwe" target="_blank"
           ><i class="fa-brands fa-github" style="color: black"></i
         ></a>
         </div>
